@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CADASTRO</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+    <style>
+        body {
+            background-color: rgb(109, 22, 22);
+        }
+
+        .container {
+            width: 1100px;
+            margin: 0 auto;
+
+            background-color: rgb(30, 30, 30);
+        }
+
+        .tituloP {
+            color: rgb(194, 194, 194);
+            font-size: 70px;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .subtitulo {
+            font-size: 30px;
+            text-align: center;
+            color: aquamarine;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-top: 20px;
+        }
+
+        .informacao {
+            color: aqua;
+
+            text-align: center;
+            margin-top: -10px;
+            font-size: 15px;
+            font-family: 'Courier New', monospace;
+            ;
+        }
+
+        .formulario {
+            color: rgb(194, 194, 194);
+            margin-left: 80px;
+            margin-top: 30px;
+        }
+
+        .botao {
+            margin-top: 20px;
+            margin-left: 80px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="tituloP">CADASTRO DE VAGAS</div>
+
+
+        <div class="subtitulo">Aqui são as informaçãoes sobre as vagas:</div>
+        <div class="informacao">
+            <p>Quase trabalho escravo
+                <br> Remuneração: R$1100 mais descontos;
+                <br>Horas do trabalho: 60hrs semanais;
+                <br>Proibido usar o banheiro da empresa
+                <br>programadores de java não ganham vale
+            </p>
+        </div><!-- FIM informacao -->
+
+
+        <div class="formulario">
+            <!-- COMEÇO DO FORMULARIO -->
+
+            <form method="POST" action="/PROXIMAPAGINA">
+                <label>Nome: </label><br>
+                <input type="text" name="nome" value=""><br><br>
+
+                <label>E-mail: </label><br>
+                <input type="text" name="nome" value=""><br><br>
+
+                <label>Telefone: </label><br>
+                <input type="text" name="nome" value=""><br><br>
+
+                <dt>
+                    <label for="state">Estado: </label>
+                </dt>
+                <dd class"state">
+                    <span class="select-globed-label">
+                    </span>
+                    <select name="state" id="state" <option value="0" label="Selecione">Selecione</option>
+                        <option value="PR" label="PR">PR</option>
+                        <option value="SC" label="SC">SC</option>
+                        <option value="RS" label="RS">RS</option>
+                    </select>
+                    </span>
+                </dd><br>
+                <dt class="label-subject">
+                    <label for="subject">CPF: </label>
+                </dt>
+                <dd class="subject">
+                    <input type="text" name="subject" id="subject" value class="form-control" maxlength="255">
+                </dd>
+                <dt><br>
+                    <label for="message">Observação: </label>
+                </dt>
+                <dd>
+                    <textarea name="message" rows="10" cols="40">
+                        </textarea>
+                </dd>
+
+            </form>
+        </div><!-- FIM DO FORMULARIO -->
+
+        <div class="botao">
+            <button type="button" onclick="alert('Dados enviados com suceeso')">
+                Enviar</button>
+        </div>
+
+    </div><!-- FIM CONTAINER -->
+</body>
+
+</html>
